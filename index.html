@@ -26,10 +26,12 @@
                     <div class="field">
                         <label for="name">Name</label>
                         <input id="name" name="name" type="text" autocomplete="name">
+                        <span></span>
                     </div>
                     <div class="field">
                         <label for="email">Email address (required)</label>
                         <input id="email" name="email" type="email" autocomplete="email" required>
+                        <span></span>
                     </div>
                 </fieldset>
                 <fieldset class="card">
@@ -42,17 +44,17 @@
                         <label class="choice"><input type="radio" name="commission" value="other"> Other</label>
                     </fieldset>
                     <fieldset class="card">
-                    <legend>Commission Details (optional)</legend>
+                    <legend>F3 · Commission Details (optional)</legend>
                     <p class="help">The following information is optional but will help speed up the process of processing your request.</p>
                     <div class="field">
                         <label for="details">Request details</label>
                         <p class="help" id="details-help">Provide a brief description of the commission and any important notes. Maximum of 250 characters.</p>
-                        <textarea id="details" name="details" aria-describedby="details-help"></textarea>
+                        <textarea id="details" name="details" aria-describedby="details-help" maxlength="250"></textarea>
                     </div>
                     <label for="print" id="select-print">Receive a physical print in addition to the digital copy? <input id="print" type="checkbox" name="print" value="yes"></label>
                     </fieldset>
                     <fieldset class="card">
-                        <legend>Prospective Deadline (optional)</legend>
+                        <legend>F3 · Prospective Deadline (optional)</legend>
                         <p class="help">Enter a date by which you would like the commission complete. Turnaround time may vary depending on complexity of request.</p>
                         <label for="deadline">Preferred completion date (must be after October 20th): <input id="deadline" type="date" name="deadline" min="2026-10-20"></label>
                     </fieldset>
@@ -60,21 +62,33 @@
                 </form>
                 <section id="states" class="card-secondary">
                     <h2>F5 · State and Recovery Specimen</h2>
-                    <p>Document default, focus, required, valid, invalid, disabled, and a static server-returned error. Keep this section separate from the primary blank form when necessary to avoid misleading users.</p>
                     <div class="error-summary">
-                        <h3>There is a problem with the fictional submission</h3>
-                        <p><a href="#error-example">Email address needs attention</a></p>
+                        <h3>There was an error with your submission</h3>
+                        <p><a href="#error-example">Invalid Email Address</a></p>
                     </div>
                     <div class="field field-error">
-                        <label for="error-example">Email address</label>
-                        <input id="error-example" type="email" value="alex.example" aria-invalid="true" aria-describedby="error-message">
-                        <p id="error-message"><strong>Error:</strong> Enter an address in the format name@example.com.</p>
+                        <label for="error-example">Email Address (required)</label>
+                        <input id="error-example" type="email" value="jamesmail" aria-invalid="true" aria-describedby="error-message">
+                        <p id="error-message"><strong>Error:</strong> Enter a valid email address using the format name@domain.com.</p>
                     </div>
                     <button type="button" disabled>Disabled example</button>
+                    <div>
+                        <label for="required-field">Required field example</label>
+                        <input id="required-field" type="text" required>
+
+                        <label for="valid-field">Valid field example</label>
+                        <input id="valid-field" type="email" value="valid@email.com" valid>
+
+                        <label for="disabled-field">Disabled field example</label>
+                        <input id="disabled-field" type="text" disabled value="Disabled Text Field">
+                    </div>
                 </section>
                 <section id="documentation">
                     <h2>F2 and F6 · Planning and Evidence</h2>
-                    <p>Link your field inventory, state matrix, fictional test-data list, completed test record, and AI disclosure.</p>
+                    <p>No AI used.
+                        <br>
+                        <a href="field-inventory-template.html">Field Inventory</a>
+                    </p>
                 </section>
             </main>
         </body>
