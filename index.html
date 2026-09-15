@@ -10,7 +10,7 @@
             <p class="eyebrow">Application, Registration, or Request</p>
             <h1>Art Commission Request</h1>
             <p class="lede">This form facilitates the request for art commissions and acts as preliminary data gathering for the nature of said commission as well as establishing requester's expectations.
-                Responses will be by email and the turnaround on a response should be within 24 hours.
+                Responses will be by email and the turnaround on a response should be within 24 hours. All information provided will solely be used to facilitate efficient communication.
             </p>
         </header>
         <main>
@@ -20,7 +20,7 @@
                 </p>
             </section>
             <form action="" method="get">
-                <fieldset>
+                <fieldset class="card">
                     <legend>F3 · Contact information</legend>
                     <p class="help">Please provide your contact information.</p>
                     <div class="field">
@@ -32,33 +32,33 @@
                         <input id="email" name="email" type="email" autocomplete="email" required>
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend>F3 · Commission Type</legend>
+                <fieldset class="card">
+                    <legend>F3 · Commission Type (required)</legend>
                     <p class="help">Please select the type of commission you are requesting.</p>
                     <label class="choice">
-                        <input type="radio" name="commission" value="landscape"> Landscape</label>
+                        <input type="radio" name="commission" value="landscape" checked> Landscape</label>
                         <label class="choice"><input type="radio" name="commission" value="pet-portrait"> Pet Portrait</label>
                         <label class="choice"><input type="radio" name="commission" value="character-art"> Character Artwork</label>
                         <label class="choice"><input type="radio" name="commission" value="other"> Other</label>
                     </fieldset>
-                    <fieldset>
-                    <legend>Commission Details</legend>
+                    <fieldset class="card">
+                    <legend>Commission Details (optional)</legend>
                     <p class="help">The following information is optional but will help speed up the process of processing your request.</p>
                     <div class="field">
                         <label for="details">Request details</label>
                         <p class="help" id="details-help">Provide a brief description of the commission and any important notes. Maximum of 250 characters.</p>
                         <textarea id="details" name="details" aria-describedby="details-help"></textarea>
                     </div>
-                    <label for="print">Receive a physical print in addition to the digital copy? <input id="print" type="checkbox" name="print" value="yes"></label>
+                    <label for="print" id="select-print">Receive a physical print in addition to the digital copy? <input id="print" type="checkbox" name="print" value="yes"></label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="card">
                         <legend>Prospective Deadline (optional)</legend>
                         <p class="help">Enter a date by which you would like the commission complete. Turnaround time may vary depending on complexity of request.</p>
-                        <label for="deadline">Preferred completion date: <input id="deadline" type="date" name="deadline" min="2026-10-20"></label>
+                        <label for="deadline">Preferred completion date (must be after October 20th): <input id="deadline" type="date" name="deadline" min="2026-10-20"></label>
                     </fieldset>
                     <button type="submit">Submit Commission Request</button>
                 </form>
-                <section id="states">
+                <section id="states" class="card-secondary">
                     <h2>F5 · State and Recovery Specimen</h2>
                     <p>Document default, focus, required, valid, invalid, disabled, and a static server-returned error. Keep this section separate from the primary blank form when necessary to avoid misleading users.</p>
                     <div class="error-summary">
