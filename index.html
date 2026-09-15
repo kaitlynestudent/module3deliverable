@@ -8,18 +8,21 @@
     <body>
         <header class="page-header">
             <p class="eyebrow">Application, Registration, or Request</p>
-            <h1>Replace with a specific task title</h1>
-            <p class="lede">Explain who this form is for, what it accomplishes, how long it takes, and what happens after submission.</p>
+            <h1>Art Commission Request</h1>
+            <p class="lede">This form facilitates the request for art commissions and acts as preliminary data gathering for the nature of said commission as well as establishing requester's expectations.
+                Responses will be by email and the turnaround on a response should be within 24 hours.
+            </p>
         </header>
         <main>
             <section id="expectations">
                 <h2>F1 · Purpose and Expectations</h2>
-                <p>State the required/optional convention and a concise privacy notice. Use fictional test data only.</p>
+                <p>An email address and commission type are required for form submission. Further clarification of the request will take place over email and the more information provided in the form means less back-and-forth over email.
+                </p>
             </section>
             <form action="" method="get">
                 <fieldset>
                     <legend>F3 · Contact information</legend>
-                    <p class="help">Replace or extend this group based on your justified field inventory.</p>
+                    <p class="help">Please provide your contact information.</p>
                     <div class="field">
                         <label for="name">Name</label>
                         <input id="name" name="name" type="text" autocomplete="name">
@@ -30,18 +33,30 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>F3 · Request choices</legend>
-                    <p class="help">Use an appropriate radio, checkbox, or select structure for the task.</p>
+                    <legend>F3 · Commission Type</legend>
+                    <p class="help">Please select the type of commission you are requesting.</p>
                     <label class="choice">
-                        <input type="radio" name="request_type" value="option-a"> Replace with option A</label>
-                        <label class="choice"><input type="radio" name="request_type" value="option-b"> Replace with option B</label>
+                        <input type="radio" name="commission" value="landscape"> Landscape</label>
+                        <label class="choice"><input type="radio" name="commission" value="pet-portrait"> Pet Portrait</label>
+                        <label class="choice"><input type="radio" name="commission" value="character-art"> Character Artwork</label>
+                        <label class="choice"><input type="radio" name="commission" value="other"> Other</label>
                     </fieldset>
+                    <fieldset>
+                    <legend>Commission Details</legend>
+                    <p class="help">The following information is optional but will help speed up the process of processing your request.</p>
                     <div class="field">
                         <label for="details">Request details</label>
-                        <p class="help" id="details-help">Explain the expected content and any limit before entry.</p>
+                        <p class="help" id="details-help">Provide a brief description of the commission and any important notes. Maximum of 250 characters.</p>
                         <textarea id="details" name="details" aria-describedby="details-help"></textarea>
                     </div>
-                    <button type="submit">Replace with a specific action</button>
+                    <label for="print">Receive a physical print in addition to the digital copy? <input id="print" type="checkbox" name="print" value="yes"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Prospective Deadline (optional)</legend>
+                        <p class="help">Enter a date by which you would like the commission complete. Turnaround time may vary depending on complexity of request.</p>
+                        <label for="deadline">Preferred completion date: <input id="deadline" type="date" name="deadline" min="2026-10-20"></label>
+                    </fieldset>
+                    <button type="submit">Submit Commission Request</button>
                 </form>
                 <section id="states">
                     <h2>F5 · State and Recovery Specimen</h2>

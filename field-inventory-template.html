@@ -46,14 +46,64 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Example only</td>
-                        <td>Replace</td>
-                        <td>Yes/No</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace or N/A</td>
-                        <td>Replace or none</td>
-                        <td>Replace</td>
+                        <td>Name</td>
+                        <td>Contextualizes form data to individual submitting.</td>
+                        <td>No</td>
+                        <td>Text</td>
+                        <td>name</td>
+                        <td>Autocomplete name</td>
+                        <td>None</td>
+                        <td>Optional, doesn't particularly need to be the submitters full name, just an identifier to place a request to an individual.</td>
+                    </tr>
+                    <tr>
+                        <td>Email Address</td>
+                        <td>Provides means by which the individual submitting can be contacted.</td>
+                        <td>Yes</td>
+                        <td>Email</td>
+                        <td>Email</td>
+                        <td>Autocomplete Email</td>
+                        <td>Must be a valid email address</td>
+                        <td>The means to contact the requester are necessary as further information gathering needs to take place as details are hashed out.</td>
+                    </tr>
+                    <tr>
+                        <td>Commission Type</td>
+                        <td>Specifies the type of art commission being requested.</td>
+                        <td>Yes</td>
+                        <td>Radio Buttons</td>
+                        <td>(name) Commission, Values Landscape, Pet Portrait, Character Artwork, Other</td>
+                        <td>N/A</td>
+                        <td>Select one option from the list.</td>
+                        <td>No sensitive information. Sets precedent for expected workload.</td>
+                    </tr>
+                    <tr>
+                        <td>Receive Physical Print in Addition to Digital Copy?</td>
+                        <td>Specifies whether requester will expect a physical print.</td>
+                        <td>No</td>
+                        <td>Checkbox</td>
+                        <td>(name) Print, (value) yes/no</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>No sensitive information. Informs if additional material and prep time will need to be taken to account for print making.</td>
+                    </tr>
+                    <tr>
+                        <td>Completion Deadline</td>
+                        <td>Sets an expectation/timeframe for expected turnaround.</td>
+                        <td>No</td>
+                        <td>Date</td>
+                        <td>Deadline / YYYY-MM-DD</td>
+                        <td>N/A</td>
+                        <td>Select a date from the calendar. The selected date must be later than October 20th, 2026.</td>
+                        <td>No sensitive information. Will establish wether the client's expected deadline is in line with their request.</td>
+                    </tr>
+                    <tr>
+                        <td>Commission Details</td>
+                        <td>Allows for initial premise or additional info to be shared to start as a jumping off point for further clarification.</td>
+                        <td>No</td>
+                        <td>Text</td>
+                        <td>Details</td>
+                        <td>Textarea</td>
+                        <td>Provide a brief description of the commission and any important notes. Maximum of 250 characters.</td>
+                        <td>No sensitive information. Serves as information gathering for a jumping off point to further questions and clarification.</td>
                     </tr>
                 </tbody>
             </table>
